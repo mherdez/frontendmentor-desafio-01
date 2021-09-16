@@ -31,6 +31,10 @@ body {
       -ms-flex-align: center;
           align-items: center;
   height: 100vh;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .card {
@@ -140,5 +144,17 @@ body {
 
 .card-footer a:hover {
   color: #1f2f56;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.attribution a {
+  color: #3e52a3;
+  text-decoration: none;
+  font-weight: 700;
 }
 /*# sourceMappingURL=style.css.map */
