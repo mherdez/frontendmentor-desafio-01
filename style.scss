@@ -4,7 +4,6 @@ $very-pale-blue: hsl(225, 100%, 98%);
 $desaturated-blue: hsl(224, 23%, 55%);
 $dark-blue: hsl(223, 47%, 23%);
 
-
 html {
    box-sizing: border-box;
    font-size: 62.5%; // 1 rem = 10 px
@@ -20,9 +19,117 @@ body {
    width: 100%;
    font-size: 1.6rem;
    font-family: 'Red Hat Display', sans-serif;
+   color: $dark-blue;
+}
+
+.container {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 100vh;
 }
 
 .card {
-   border: 1px solid black;
-   width: 450px;
+   width: 425px;
+   background: white;
+   border-radius: 20px;
+   overflow: hidden;
+   box-shadow: 0px 2px 40px hsla(224, 96%, 70%, 0.4);
+
+   &-header {
+      object-fit: contain;
+   }
+
+   &-body {
+      text-align: center;
+
+      &-title {
+         font-size: 1.3rem;
+         font-weight: 900;
+         margin-top: 40px;
+         margin-bottom: 20px;
+      }
+
+      &-text {
+         color: $desaturated-blue;
+         margin: 0 40px;
+         line-height: 2.5rem;
+      }
+
+      &-section {
+         display: flex;
+         justify-content: space-around;
+         margin: 0 45px;
+         align-items: center;
+         background: $very-pale-blue;
+         border-radius: 10px;
+
+         &-col {
+            margin: 0 10px;
+
+            h3 {
+               font-size: 1.5rem;
+               margin-bottom: -10px;
+            }
+
+            p{
+               font-size: 1.6rem;
+               color: $desaturated-blue;
+            }
+
+            &-push-right {
+               margin-left: auto;
+               font-size: 1.4rem;
+               
+               a {
+                  color: $bright-blue;
+                  font-weight: 900;
+                  margin-right: 10px;
+                  
+                  &:hover {
+                     color: #756BF1;
+                     text-decoration: none;
+                  }
+               }
+            }
+         }
+      }
+
+   }
+   &-footer {
+      display: block;
+      margin-bottom: 50px;
+
+      &-btn {
+         background: $bright-blue;
+         margin: 35px 50px;
+         font-size: 1.4rem;
+         color: $very-pale-blue;
+         padding: 15px;
+         border-radius: 10px;
+         box-shadow: 0px 10px 20px #5d4e9460;
+         font-weight: 700;
+
+         &:hover {
+            background: #756BF1;
+         }
+      }
+
+      a {
+         margin-top: 200px;
+         margin-bottom: 20px;
+         color: $desaturated-blue;
+         font-weight: 900;
+         text-decoration: none;
+         font-size: 1.4rem;
+
+         &:hover {
+            color: $dark-blue;
+         }
+      }
+
+   }
+
+
+
 }

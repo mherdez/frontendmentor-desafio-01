@@ -17,10 +17,128 @@ body {
   width: 100%;
   font-size: 1.6rem;
   font-family: 'Red Hat Display', sans-serif;
+  color: #1f2f56;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
 }
 
 .card {
-  border: 1px solid black;
-  width: 450px;
+  width: 425px;
+  background: white;
+  border-radius: 20px;
+  overflow: hidden;
+  -webkit-box-shadow: 0px 2px 40px rgba(105, 144, 252, 0.4);
+          box-shadow: 0px 2px 40px rgba(105, 144, 252, 0.4);
+}
+
+.card-header {
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.card-body {
+  text-align: center;
+}
+
+.card-body-title {
+  font-size: 1.3rem;
+  font-weight: 900;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+.card-body-text {
+  color: #7280a7;
+  margin: 0 40px;
+  line-height: 2.5rem;
+}
+
+.card-body-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: 0 45px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #f5f7ff;
+  border-radius: 10px;
+}
+
+.card-body-section-col {
+  margin: 0 10px;
+}
+
+.card-body-section-col h3 {
+  font-size: 1.5rem;
+  margin-bottom: -10px;
+}
+
+.card-body-section-col p {
+  font-size: 1.6rem;
+  color: #7280a7;
+}
+
+.card-body-section-col-push-right {
+  margin-left: auto;
+  font-size: 1.4rem;
+}
+
+.card-body-section-col-push-right a {
+  color: #3829e0;
+  font-weight: 900;
+  margin-right: 10px;
+}
+
+.card-body-section-col-push-right a:hover {
+  color: #756BF1;
+  text-decoration: none;
+}
+
+.card-footer {
+  display: block;
+  margin-bottom: 50px;
+}
+
+.card-footer-btn {
+  background: #3829e0;
+  margin: 35px 50px;
+  font-size: 1.4rem;
+  color: #f5f7ff;
+  padding: 15px;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 10px 20px #5d4e9460;
+          box-shadow: 0px 10px 20px #5d4e9460;
+  font-weight: 700;
+}
+
+.card-footer-btn:hover {
+  background: #756BF1;
+}
+
+.card-footer a {
+  margin-top: 200px;
+  margin-bottom: 20px;
+  color: #7280a7;
+  font-weight: 900;
+  text-decoration: none;
+  font-size: 1.4rem;
+}
+
+.card-footer a:hover {
+  color: #1f2f56;
 }
 /*# sourceMappingURL=style.css.map */
